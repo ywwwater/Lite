@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Functions.ExchangeRate.Exchange"
+    android:background="@drawable/back"
+    >
+
+    <EditText
+        android:id="@+id/src_money"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        android:gravity="center"
+        />
+    <Spinner
+        android:id="@+id/src_spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/money_chinese"
+        app:layout_constraintTop_toTopOf="@id/src_money"
+        app:layout_constraintBottom_toBottomOf="@id/src_money"
+        app:layout_constraintStart_toEndOf="@id/src_money"
+        />
+
+    <EditText
+        android:id="@+id/des_money"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/src_money"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        android:gravity="center"
+        />
+    <Spinner
+        android:id="@+id/des_spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/money_chinese"
+        app:layout_constraintTop_toTopOf="@id/des_money"
+        app:layout_constraintBottom_toBottomOf="@id/des_money"
+        app:layout_constraintStart_toEndOf="@id/des_money"
+        />
+
+
+    <Button
+        android:id="@+id/exchange_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_button"
+        android:text="@string/exchange"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/des_money"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/update_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_time_test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

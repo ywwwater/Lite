@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="money_chinese">
+        <item>美元</item>
+        <item>人民币</item>
+        <item>日元</item>
+        <item>欧元</item>
+        <item>英镑</item>
+        <item>港币</item>
+        <item>台币</item>
+        <item>韩元</item>
+        <item>津巴布韦币</item>
+    </string-array>
+    
+    <string-array name="money_code">
+        <item>USD</item>
+        <item>CNY</item>
+        <item>JPY</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>HKD</item>
+        <item>TWD</item>
+        <item>KRW</item>
+        <item>ZWL</item>
+    </string-array>
+
+
+    <string-array name="language_chinese_src">
+        <item>自动检测</item>
+        <item>中文</item>
+        <item>英语</item>
+        <item>日语</item>
+        <item>韩语</item>
+        <item>法语</item>
+        <item>西班牙语</item>
+        <item>俄语</item>
+        <item>德语</item>
+    </string-array>
+    <string-array name="language_code_src">
+        <item>auto</item>
+        <item>zh</item>
+        <item>en</item>
+        <item>jp</item>
+        <item>kor</item>
+        <item>fra</item>
+        <item>spa</item>
+        <item>ru</item>
+        <item>de</item>
+    </string-array>
+
+
+    <string-array name="language_chinese_des">
+        <item>中文</item>
+        <item>英语</item>
+        <item>日语</item>
+        <item>韩语</item>
+        <item>法语</item>
+        <item>西班牙语</item>
+        <item>俄语</item>
+        <item>德语</item>
+    </string-array>
+    <string-array name="language_code_des">
+        <item>zh</item>
+        <item>en</item>
+        <item>jp</item>
+        <item>kor</item>
+        <item>fra</item>
+        <item>spa</item>
+        <item>ru</item>
+        <item>de</item>
+    </string-array>
+
+
+
+
+</resources>

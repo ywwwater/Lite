@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pineappleym.lite">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Home" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Functions.ExchangeRate.Exchange">
+        </activity>
+        <activity android:name=".Functions.Logistics.Logistics">
+        </activity>
+        <activity android:name=".Functions.Logistics.NewsActivity" />
+        <activity android:name=".Functions.Translate.Translate">
+        </activity>
+        <activity android:name=".Functions.South.southActivity">
+        </activity>
+        <activity android:name=".Functions.Random.randomActivity">
+        </activity>
+        <activity android:name=".Functions.Transform.transformActivity">
+        </activity>
+        <activity android:name=".Functions.ColorPick.ColorPick" >
+        </activity>
+        <activity android:name=".Functions.QRcode.QRcode" >
+        </activity>
+        <activity android:name=".Functions.WorldTime.WorldTime" >
+        </activity>
+        <activity android:name=".Functions.WorldTime.CityAdd" >
+        </activity>
+    </application>
+
+</manifest>

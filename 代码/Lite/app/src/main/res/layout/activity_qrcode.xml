@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="请输入连接或者文本"
+        android:maxLines="1"
+        tools:ignore="HardcodedText"
+        android:autofillHints=""
+        android:inputType="" tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/qrsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="请输入二维码大小(推荐150-800，默认为600)"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        tools:ignore="HardcodedText"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="请输入二维码颜色(16进制,可不填)"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:maxLines="1"
+        tools:ignore="HardcodedText"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="请输入背景颜色(16进制,可不填)"
+        android:maxLines="1"
+        tools:ignore="HardcodedText"
+        android:importantForAutofill="no"
+        android:inputType="" tools:targetApi="o" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/show"
+            android:background="@drawable/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:text="预览"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/save"
+            android:radius="10dp"
+            android:background="@drawable/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="保存"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="TODO"
+        android:visibility="gone"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+</LinearLayout>
